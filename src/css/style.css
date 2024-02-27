@@ -36,6 +36,22 @@ a:hover {
   transition: all 1s ease-in-out;
   border-radius: 20px;
 }
+.section {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.pity {
+  background-color: rgba(0, 0, 233, 0.7);
+}
+.prof_section {
+  background-color: rgba(7, 206, 224, 0.7);
+}
+.love {
+  background-color: rgba(134, 7, 224, 0.7);
+}
+.review_section {
+  background-color: rgba(7, 224, 204, 0.7);
+}
 .prof {
   margin-left: 20px;
   border-radius: 10px;
@@ -125,6 +141,28 @@ a:hover {
           text-align: center;
           font-size: 60px;
           color: white;
+        }
+        .reviews {
+          margin-top: 50px;
+          border: solid 5px rgb(213, 213, 213);
+          border-radius: 20px;
+        }
+        .reviews_title {
+          font-size: 40px;
+        }
+        .review {
+          margin-top: 10px;
+          border: solid 2px rgb(213, 213, 213);
+        }
+        .review_name {
+          margin-left: 10px;
+          display: inline-block;
+          border: solid 2px rgb(213, 213, 213);
+          font-size: 30px;
+        }
+        .review_text {
+          margin-left: 20px;
+          font-size: 20px;
         }
 .order {
   border-radius: 10px;

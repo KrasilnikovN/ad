@@ -7,27 +7,42 @@ body {
   width: 100%;
 }
   .title {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
   transition: all 1s ease-in-out;
   margin-top: 40px;
   background-color: blue;
   border-radius: 10px;
-  background-color: blue;
-  height: 200px;
-  width: 100%;
+}
 h1, h2 {
   padding-top: 10px;
 color: white;
 text-align: center;
 }
-.sub, a {
-  text-align: center;
+.sub, a, .order {
+  height: 40px;
   list-style-type: none;
   color: white;
   font-size: 30px;
   transition: all 1s ease-in-out;
 }
+.zapisatsa {
+  justify-content: center;
+  height: 45px;
+}
+li, ol {
+  height: 35px;
+  vertical-align: middle;
+}
+a {
+  margin-top: 5px;
+  vertical-align: middle;
+}
 a:hover {
   transition: all 1s ease-in-out;
+  vertical-align: middle;
   color: rgb(0, 255, 0);
   font-size: 35px;
 }
@@ -36,113 +51,87 @@ a:hover {
   transition: all 1s ease-in-out;
   border-radius: 20px;
 }
+.sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .section {
-  margin-top: 20px;
-  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  margin-top: 40vh;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+.image_text {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.image {
+  display: flex;
+  margin-left: 20px;
+  border-radius: 10px;
+  height: 100vh;
+  width: 60%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.image_overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.2);
+  border-radius: 10px;
+}
+.text {
+  align-items: center;
+  display: flex;
+font-size: 60px;
+text-align: center;
+color: white;
 }
 .pity {
-  background-color: rgba(0, 0, 233, 0.7);
+background: blue;
+}
+.or_image {
+  background: url("../img/or.jpg") no-repeat center top;
+  background-size: cover;
+}
+.or1_image {
+  background: url("../img/or1.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.trening_image {
+  background: url("../img/trening.png") no-repeat center top;
+  background-size: cover;
 }
 .prof_section {
-  background-color: rgba(7, 206, 224, 0.7);
+  background: blue;
 }
-.love {
-  background-color: rgba(134, 7, 224, 0.7);
-}
-.review_section {
-  background-color: rgba(7, 224, 204, 0.7);
-}
-.prof {
-  margin-left: 20px;
-  border-radius: 10px;
-  margin-top: 20vh;
-  height: 100vh;
-  width: 60%;
+.prof_image {
+  background: url("../img/teatcher.jpeg") no-repeat center top;
   background-size: cover;
-  background-image:linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)), url("../img/teatcher.jpeg");
 }
-  .prof_text {
-    padding-top: calc(25% + 60px);
-    text-align: center;
-    font-size: 60px;
-    color: white;
-  }
-.otbor {
-  margin-top: 40vh;
-  margin-left: 20px;
-  border-radius: 10px;
-  height: 100vh;
-  width: 60%;
+.section_love {
+  background: blue;
+}
+.love_image {
+  background: url("../img/love.jpg") no-repeat center top;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)), url("../img/love.jpg");
 }
-  .ts {
-    padding-top: calc(25% + 50px);
-    color: white;
-    text-align: center;
-    font-size: 50px;
-  }
-  .or {
-    border-radius: 10px;
-    margin-top: 40vh;
-    margin-left: 20px;
-    height: 100vh;
-    width: 60%;
-    background-size: 100% 100%;
-    background-image:linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)), url("../img/or.jpg");
-  }
-  .or_text {
-    padding-top: calc(25% + 60px);
-    text-align: center;
-    font-size: 60px;
-    color: white
-  }
-  .or1 {
-    border-radius: 10px;
-    margin-top: 40vh;
-    margin-left: 20px;
-    height: 100vh;
-    width: 60%;
-    background-size: 100% 100%;
-    background-image:linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)), url("../img/or1.jpeg");
-  }
-    .or1_text {
-      padding-top: calc(25% + 60px);
-      text-align: center;
-      font-size: 60px;
-      color: white;
-    }
-    .trening {
-      border-radius: 10px;
-      margin-top: 40vh;
-      margin-left: 20px;
-      height: 100vh;
-      width: 60%;
-      background-size: cover;
-      background-image:linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)), url("../img/trening.png");
-    }
-      .trening_text {
-        padding-top: calc(25% + 60px);
-        text-align: center;
-        font-size: 60px;
-        color: white;
-      }
-      .client {
-        border-radius: 10px;
-        margin-top: 40vh;
-        margin-left: 20px;
-        height: 100vh;
-        width: 60%;
-        background-size: 100% 100%;
-        background-image:linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)), url("../img/5_star.jpg");
-      }
-        .client_text {
-          padding-top: calc(25% + 60px);
-          text-align: center;
-          font-size: 60px;
-          color: white;
-        }
-        .reviews {
+.section_client {
+  background: blue;
+}
+.client_image {
+  background: url("../img/5_star.jpg") no-repeat center top;
+  background-size: cover;
+}
+.reviews {
           margin-top: 50px;
           border: solid 5px rgb(213, 213, 213);
           border-radius: 20px;
@@ -164,28 +153,27 @@ a:hover {
           margin-left: 20px;
           font-size: 20px;
         }
-.order {
-  border-radius: 10px;
-  margin-left: 10%;
-  margin-top: 30px;
-  background-color: blue;
-  height: 50px;
-  width: 80%;
-}
-  li, a {
-    text-align: center;
-    list-style-type: none;
-    color: white;
-    font-size: 30px;
-    transition: all 1s ease-in-out;
-  }
-  a:hover {
-    transition: all 1s ease-in-out;
-    color: rgb(0, 255, 0);
-    font-size: 35px;
-}
-footer {
-  background-color: gray;
-  width: 100%;
-  height: 50px;
-}
+        .order {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          margin-top: 30px;
+          background-color: blue;
+          height: 50px;
+          width: 90%;
+          margin-left: 5%;
+        }
+          li, a {
+            text-align: center;
+            list-style-type: none;
+            color: white;
+            font-size: 30px;
+            transition: all 1s ease-in-out;
+          }
+          a:hover {
+            transition: all 1s ease-in-out;
+            color: rgb(0, 255, 0);
+            font-size: 35px;
+        }

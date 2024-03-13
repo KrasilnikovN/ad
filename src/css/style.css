@@ -15,6 +15,7 @@ body {
   margin-top: 40px;
   background-color: blue;
   border-radius: 10px;
+  margin-bottom: calc(30vh - 10px);
 }
 h1, h2 {
   padding-top: 10px;
@@ -61,12 +62,14 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   flex-direction: column;
-  margin-top: 40vh;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   border-radius: 10px;
 }
 .image_text {
+  justify-content: center;
+  flex-wrap: wrap;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -75,10 +78,9 @@ a:hover {
 }
 .image {
   display: flex;
-  margin-left: 20px;
   border-radius: 10px;
   height: 100vh;
-  width: 60%;
+  width: 100vh;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -89,7 +91,10 @@ a:hover {
   border-radius: 10px;
 }
 .text {
+  flex-shrink: 0;
+  width: calc(40% - 20px);
   align-items: center;
+  justify-content: center;
   display: flex;
 font-size: 60px;
 text-align: center;

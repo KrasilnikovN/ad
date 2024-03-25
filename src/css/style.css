@@ -23,6 +23,8 @@ color: white;
 text-align: center;
 }
 .zapisatsa {
+  display: flex;
+  justify-content: center;
 transition: all 1s ease-in-out;
 border-radius: 20px;
 background-color: blue;

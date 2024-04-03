@@ -22,30 +22,6 @@ h1, h2 {
 color: white;
 text-align: center;
 }
-.zapisatsa {
-  display: flex;
-  justify-content: center;
-transition: all 1s ease-in-out;
-border-radius: 20px;
-background-color: blue;
-height: 45px;
-}
-li, ol {
-  transition: all 1s ease-in-out;
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 45px;
-  list-style-type: none;
-}
-a {
-  transition: all 1s ease-in-out;
-  font-size: 35px;
-  color: white;
-}
-a:hover {
-  color: rgb(0, 255, 0);
-}
 .title:hover {
   transition: all 1s ease-in-out;
   border-radius: 20px;
@@ -75,12 +51,13 @@ a:hover {
   padding-bottom: 10px;
 }
 .image {
+  margin: 0;
+  justify-content: center;
+  align-content: center;
   display: flex;
   border-radius: 10px;
   height: 700px;
   width: 700px;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 .image_overlay {
   width: 100%;
@@ -179,7 +156,8 @@ background: blue;
           border-radius: 10px;
           background-color: rgba(0, 0, 255, 0.3);
           border: solid 3px gray;
-          height: 250px;
+          padding-top: 20px;
+          padding-bottom: 20px;
           width: 90%;
         }
         .order_div {
@@ -198,4 +176,124 @@ background: blue;
         }
         .forma_order {
           font-size: 20px;
+        }
+        .zapisatsa_div {
+          display: flex;
+        }
+        .zapisatsa {
+          display: flex;
+          justify-content: center;
+        transition: all 1s ease-in-out;
+        border-radius: 20px;
+        background-color: blue;
+        height: 45px;
+        }
+        li, ol {
+          transition: all 1s ease-in-out;
+          display: flex;
+          justify-content: center;
+          width: 200px;
+          height: 45px;
+          list-style-type: none;
+        }
+        a {
+          transition: all 1s ease-in-out;
+          text-align: center;
+          font-size: 35px;
+          width: 200px;
+          color: white;
+        }
+        a:hover {
+          color: rgb(0, 255, 0);
+        }
+        @media(max-width: 1200px) {
+          .text {
+            justify-content: flex-start;
+            width: 500px;
+            margin: 0;
+          }
+          .image_text {
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+          }
+          .image {
+            justify-content: center;
+            height: 500px;
+            width: 500px;
+          }
+        }
+        @media(max-width: 998px) {
+          .section {
+            justify-content: center;
+          }
+          .image_text {
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
+          .image {
+            margin: auto;
+            height: 300px;
+            width: 300px;
+          }
+          .text {
+            width: 300px;
+            width: auto;
+            margin: 0;
+            text-align: center;
+          }
+          .text_text {
+            width: 300px;
+          }
+          .forma_order {
+            font-size: 60px;
+          }
+          .order {
+            height: 400px;
+          }
+          .forma {
+            height: 720px;
+          }
+          .zapisatsa {
+            height: 90px;
+          }
+          a {
+            font-size: 70px;
+            width: 400px;
+          }
+          li, ol {
+            width: 400px;
+            height: 85px;
+          }
+          .reviews_container {
+            display: flex;
+            flex-direction: column;
+              width: 50%;
+          }
+          .reviews {
+            flex-direction: column;
+                  }
+                  .reviews_title_title {
+                    font-size: 80px;
+                  }
+                  .review {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                  }
+                  .review_name {
+                    height: 60px;
+                    justify-content: flex-start;
+                  }
+                  .review_name_name {
+                    margin: 0;
+                    border: none;
+                    font-size: 50px;
+                  }
+                  .review_text {
+                    font-size: 40px;
+                  }
         }
